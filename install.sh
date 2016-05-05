@@ -22,6 +22,12 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+# setup vim directories
+echo -n "Setting up vim directories..."
+mkdir -p ~/.vim/backups
+mkdir -p ~/.vim/swaps
+mkdir -p ~/.vim/undo
+
 # setup tmux
 echo -n "Setting up tpm..."
 mkdir -p ~/.tmux/plugins
